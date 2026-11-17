@@ -1,0 +1,20 @@
+[project]
+name = "ai-travel-planner-api"
+version = "0.1.0"
+description = "FastAPI backend for the AI Travel Planner"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.163.2",
+    "pydantic-settings>=2.16.3",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
